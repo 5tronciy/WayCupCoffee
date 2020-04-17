@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/waycup_" />
+
+    <ImageView
+        android:id="@+id/iv_home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_pict" />
+
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Главная"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorLight"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_home"
+        app:layout_constraintStart_toEndOf="@+id/iv_home"
+        app:layout_constraintTop_toTopOf="@+id/iv_home" />
+
+    <ImageView
+        android:id="@+id/iv_card"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/iv_home"
+        app:layout_constraintTop_toBottomOf="@+id/iv_home"
+        app:srcCompat="@drawable/card_pict" />
+
+    <TextView
+        android:id="@+id/tv_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Ваша карта"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorLight"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_card"
+        app:layout_constraintStart_toEndOf="@+id/iv_card"
+        app:layout_constraintTop_toTopOf="@+id/iv_card" />
+
+    <ImageView
+        android:id="@+id/iv_orders"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/iv_card"
+        app:layout_constraintTop_toBottomOf="@+id/iv_card"
+        app:srcCompat="@drawable/orders_pict" />
+
+    <TextView
+        android:id="@+id/tv_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Ваши заказы"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorLight"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_orders"
+        app:layout_constraintStart_toEndOf="@+id/iv_orders"
+        app:layout_constraintTop_toTopOf="@+id/iv_orders" />
+
+    <ImageView
+        android:id="@+id/iv_contact"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/iv_orders"
+        app:layout_constraintTop_toBottomOf="@+id/iv_orders"
+        app:srcCompat="@drawable/map_pict" />
+
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Контакты"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorLight"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_contact"
+        app:layout_constraintStart_toEndOf="@+id/iv_contact"
+        app:layout_constraintTop_toTopOf="@+id/iv_contact" />
+
+    <ImageView
+        android:id="@+id/iv_coupons"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/iv_contact"
+        app:layout_constraintTop_toBottomOf="@+id/iv_contact"
+        app:srcCompat="@drawable/coupons_pict" />
+
+    <TextView
+        android:id="@+id/tv_coupons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Купоны"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorLight"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_coupons"
+        app:layout_constraintStart_toEndOf="@+id/iv_coupons"
+        app:layout_constraintTop_toTopOf="@+id/iv_coupons" />
+
+    <ImageView
+        android:id="@+id/iv_news"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/iv_coupons"
+        app:layout_constraintTop_toBottomOf="@+id/iv_coupons"
+        app:srcCompat="@drawable/news_pict" />
+
+    <TextView
+        android:id="@+id/tv_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Новости"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorLight"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_news"
+        app:layout_constraintStart_toEndOf="@+id/iv_news"
+        app:layout_constraintTop_toTopOf="@+id/iv_news" />
+
+    <ImageView
+        android:id="@+id/iv_feedback"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/iv_news"
+        app:layout_constraintTop_toBottomOf="@+id/iv_news"
+        app:srcCompat="@drawable/feedback_pict" />
+
+    <TextView
+        android:id="@+id/tv_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Обратная связь"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorLight"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_feedback"
+        app:layout_constraintStart_toEndOf="@+id/iv_feedback"
+        app:layout_constraintTop_toTopOf="@+id/iv_feedback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

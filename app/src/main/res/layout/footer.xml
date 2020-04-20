@@ -1,13 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/footer"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center">
 
-    <TextView
-        android:id="@+id/textViewFooterText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Подвал"
-        android:textSize="20sp" />
-</LinearLayout>
+    <ImageView
+        android:id="@+id/iv_home_footer"
+        android:layout_width="101dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/iv_card_footer"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/app_name"
+        android:padding="2dp"
+        android:src="@drawable/home_pict"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_card_footer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_card_footer"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/app_name"
+        android:padding="7dp"
+        android:src="@drawable/card_pict"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_coupons_footer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_home_footer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_coupons_footer"
+        android:layout_width="101dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/iv_card_footer"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/app_name"
+        android:padding="5dp"
+        android:src="@drawable/coupons_pict"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_contact_footer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_card_footer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_contact_footer"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/iv_home_footer"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/app_name"
+        android:padding="2dp"
+        android:src="@drawable/map_pict"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_coupons_footer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

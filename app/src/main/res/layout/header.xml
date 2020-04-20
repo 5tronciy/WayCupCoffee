@@ -24,8 +24,8 @@
             android:textStyle="normal"
             android:layout_margin="10dp"/>
 
-        <ImageView
-            android:id="@+id/iv_home_footer"
+        <ImageButton
+            android:id="@+id/ibtn_waycup_header"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="top|end"
@@ -33,6 +33,7 @@
             android:layout_marginEnd="5dp"
             android:background="@color/colorLight"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/waycup_"/>
+            android:scaleType="centerInside"
+            android:src="@drawable/waycup_" />
 
 </LinearLayout>

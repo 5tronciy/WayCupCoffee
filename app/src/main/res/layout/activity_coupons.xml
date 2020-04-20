@@ -9,7 +9,7 @@
     <include layout="@layout/header" />
     <include layout="@layout/footer" />
     <RelativeLayout
-        android:id="@+id/content"
+        android:id="@+id/coupons_content"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_above="@id/footer"
@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Главная"
+            android:text="Купоны"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp" />
     </RelativeLayout>

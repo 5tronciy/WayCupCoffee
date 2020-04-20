@@ -8,18 +8,16 @@
     android:orientation="vertical"
     tools:context=".MenuActivity">
 
-    <ImageView
-        android:id="@+id/iv_home_footer"
+    <ImageButton
+        android:id="@+id/ibtn_waycup_menu"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="top|end"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
         android:background="@color/colorPrimaryDark"
         android:contentDescription="@string/app_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/waycup_" />
+        android:scaleType="centerInside"
+        android:src="@drawable/waycup_"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/iv_home"
@@ -29,7 +27,8 @@
         android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home_pict" />
+        app:srcCompat="@drawable/home_pict"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/tv_home"
@@ -50,7 +49,8 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/iv_home"
         app:layout_constraintTop_toBottomOf="@+id/iv_home"
-        app:srcCompat="@drawable/card_pict" />
+        app:srcCompat="@drawable/card_pict"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/tv_card"
@@ -71,7 +71,8 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/iv_card"
         app:layout_constraintTop_toBottomOf="@+id/iv_card"
-        app:srcCompat="@drawable/orders_pict" />
+        app:srcCompat="@drawable/orders_pict"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/tv_orders"
@@ -92,7 +93,8 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/iv_orders"
         app:layout_constraintTop_toBottomOf="@+id/iv_orders"
-        app:srcCompat="@drawable/map_pict" />
+        app:srcCompat="@drawable/map_pict"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/tv_contact"
@@ -113,7 +115,8 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/iv_contact"
         app:layout_constraintTop_toBottomOf="@+id/iv_contact"
-        app:srcCompat="@drawable/coupons_pict" />
+        app:srcCompat="@drawable/coupons_pict"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/tv_coupons"
@@ -134,7 +137,8 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/iv_coupons"
         app:layout_constraintTop_toBottomOf="@+id/iv_coupons"
-        app:srcCompat="@drawable/news_pict" />
+        app:srcCompat="@drawable/news_pict"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/tv_news"
@@ -155,7 +159,8 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/iv_news"
         app:layout_constraintTop_toBottomOf="@+id/iv_news"
-        app:srcCompat="@drawable/feedback_pict" />
+        app:srcCompat="@drawable/feedback_pict"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/tv_feedback"

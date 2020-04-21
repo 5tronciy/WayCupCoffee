@@ -27,13 +27,16 @@ public class Feedback extends AppCompatActivity implements View.OnClickListener{
             case R.id.btn_menu:
                 Intent intent = new Intent(Feedback.this, MenuActivity.class);
                 startActivity(intent);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.ibtn_waycup_header:
                 Intent intent2 = new Intent(Feedback.this, AboutActivity.class);
                 startActivity(intent2);
+                this.overridePendingTransition(0, 0);
                 break;
                 default:
                 break;
         }
     }
+    @Override protected void onPause() { super.onPause(); overridePendingTransition(0, 0); }
 }

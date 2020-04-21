@@ -41,29 +41,36 @@ public class Orders extends AppCompatActivity implements View.OnClickListener{
             case R.id.btn_menu:
                 Intent intent = new Intent(Orders.this, MenuActivity.class);
                 startActivity(intent);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.ibtn_waycup_header:
                 Intent intent2 = new Intent(Orders.this, AboutActivity.class);
                 startActivity(intent2);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.ibtn_card_footer:
                 Intent intent3 = new Intent(Orders.this, UserCard.class);
                 startActivity(intent3);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.ibtn_home_footer:
                 Intent intent4 = new Intent(Orders.this, MainActivity.class);
                 startActivity(intent4);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.ibtn_coupons_footer:
                 Intent intent5 = new Intent(Orders.this, Coupons.class);
                 startActivity(intent5);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.ibtn_contact_footer:
                 Intent intent6 = new Intent(Orders.this, Contacts.class);
                 startActivity(intent6);
+                this.overridePendingTransition(0, 0);
                 break;
             default:
                 break;
         }
     }
+    @Override protected void onPause() { super.onPause(); overridePendingTransition(0, 0); }
 }

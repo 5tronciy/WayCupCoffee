@@ -72,65 +72,81 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.ibtn_waycup_menu:
                 Intent intent2 = new Intent(MenuActivity.this, AboutActivity.class);
                 startActivity(intent2);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.iv_home:
                 Intent intent3 = new Intent(MenuActivity.this, MainActivity.class);
                 startActivity(intent3);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.tv_home:
                 Intent intent4 = new Intent(MenuActivity.this, MainActivity.class);
                 startActivity(intent4);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.iv_card:
                 Intent intent5 = new Intent(MenuActivity.this, UserCard.class);
                 startActivity(intent5);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.tv_card:
                 Intent intent6 = new Intent(MenuActivity.this, UserCard.class);
                 startActivity(intent6);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.iv_orders:
                 Intent intent7 = new Intent(MenuActivity.this, Orders.class);
                 startActivity(intent7);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.tv_orders:
                 Intent intent8 = new Intent(MenuActivity.this, Orders.class);
                 startActivity(intent8);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.iv_contact:
                 Intent intent9 = new Intent(MenuActivity.this, Contacts.class);
                 startActivity(intent9);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.tv_contact:
                 Intent intent10 = new Intent(MenuActivity.this, Contacts.class);
                 startActivity(intent10);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.iv_coupons:
                 Intent intent11 = new Intent(MenuActivity.this, Coupons.class);
                 startActivity(intent11);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.tv_coupons:
                 Intent intent12 = new Intent(MenuActivity.this, Coupons.class);
                 startActivity(intent12);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.iv_news:
                 Intent intent13 = new Intent(MenuActivity.this, News.class);
                 startActivity(intent13);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.tv_news:
                 Intent intent14 = new Intent(MenuActivity.this, News.class);
                 startActivity(intent14);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.iv_feedback:
                 Intent intent15 = new Intent(MenuActivity.this, Feedback.class);
                 startActivity(intent15);
+                this.overridePendingTransition(0, 0);
                 break;
             case R.id.tv_feedback:
                 Intent intent16 = new Intent(MenuActivity.this, Feedback.class);
                 startActivity(intent16);
+                this.overridePendingTransition(0, 0);
                 break;
             default:
                 break;
         }
     }
+    @Override protected void onPause() { super.onPause(); overridePendingTransition(0, 0); }
 }
